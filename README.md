@@ -143,7 +143,7 @@
   ```
   실제 데이터와 Generator 가 생성한 데이터를 구분하는 모델
   ```
-- 🧐 Overfitting 이란? [Answer Post]  
+- 🧐 [Overfitting 이란?](https://jrc-park.tistory.com/271)
   ```
   모델의 파라미터들을 학습 데이터에 너무 가깝게 맞췄을 때 발생하는 현상.
   즉, 학습 데이터가 실제 세계에서 나타나는 방식과 완전히 똑같을것이라고 가정해버리는 것이다.
@@ -151,7 +151,7 @@
   Overfitting은 너무 세밀하게 학습 데이터 하나하나를 다 설명하려고 하다보니 
   정작 중요한 패턴을 설명할 수 없게 되는 현상을 말한다.
   ```
-- 🧐 Underfitting이란? [Answer Post]  
+- 🧐 [Underfitting이란?](https://jrc-park.tistory.com/271)
   ```
   ```
 - 🧐 Overfitting과 Underfitting은 어떤 문제가 있는가?  
@@ -162,7 +162,7 @@
   즉, Overfitting이 되면 training data에 대한 정확도는 좋지만 실제 test data에 대해서는 에러가 많이 생길 수 있다.
   반면에 Underfitting은 모델이 지나치게 일반화해서 training data에 대해서 학습이 제대로 되지 않는 상태를 말한다.
   ```
-- 🧐 Overfitting과 Underfitting을 해결하는 방법은? [Answer Post]  
+- 🧐 [Overfitting과 Underfitting을 해결하는 방법은?](https://jrc-park.tistory.com/272)
   ```
   [Overfitting]
   1. 데이터 그룹별 통계치 확인하고 시각화해서 데이터 패턴 확인하기
@@ -294,9 +294,16 @@
   
   개별적인 Decision Tree의 낮은 성능이 불만이면 Boosting이 적합하고, Overfitting 이 골치라면 Bagging 이 적합하다.
   ```
-- 🧐 AdaBoost / Logit Boost / Gradient Boost  
-  ```
-  ```
+  - [AdaBoost](https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-14-AdaBoost)
+    ```
+    
+    ```
+  - Logit Boost
+    ```
+    ```
+  - [Gradient Boost](https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-15-Gradient-Boost)
+    ```
+    ```
 - 🧐 Support Vector Machine이란 무엇인가?  
   ```
   ```
