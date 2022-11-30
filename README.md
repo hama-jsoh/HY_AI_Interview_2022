@@ -121,15 +121,39 @@
   ```
 - 🧐 Generative Model이란 무엇인가?  
   ```
+  생성모델은 주어진 학습 데이터를 학습하여 학습데이터의 분포를 따르는 유사한 데이터를 생성하는 모델이다.
+  
+  여러가지 종류의 생성모델이 있는데,
+  - Explicit density : 학습 데이터의 분포를 기반으로 하는 방법
+  - Tractable density : 학습데이터의 분포를 직접적으로 구하는 방법 
+  - Approximate density : 분포를 단순히 추정하는 방법
+  - Generative Adversarial Network, GAN : Generator가 학습 데이터의 분포를 학습하고 이 분포를 재현하여 
+    원 데이터의 분포와 차이가 없도록 하여 Discriminator가 실제 데이터인지 생성한 가짜 데이터인지 구별해서
+    각각에 대한 확률을 추정하는 방법
   ```
 - 🧐 Discriminative Model이란 무엇인가?  
   ```
+  Discriminative Model(ex, Logistic regression, Neural Networks)은 
+  각 class의 차이에 주목해 바로바로 어떤 class에 들어가야 할지 결정해주는 모델이다.
+  
+  반면에, Generative Model(ex, Gaussian Mixture Model(GMM))은 
+  각 class의 분포에 주목하여 어떤 분포에 들어갈 가능성이 가장 많은지 결정해주는 모델이다.
   ```
 - 🧐 Discrinator function이란 무엇인가?  
   ```
+  실제 데이터와 Generator 가 생성한 데이터를 구분하는 모델
   ```
 - 🧐 Overfitting 이란? [Answer Post]  
   ```
+  모델의 파라미터들을 학습 데이터에 너무 가깝게 맞췄을 때 발생하는 현상.
+  즉, 학습 데이터가 실제 세계에서 나타나는 방식과 완전히 똑같을것이라고 가정해버리는 것이다.
+  
+  Overfitting은 너무 세밀하게 학습 데이터 하나하나를 다 설명하려고 하다보니 
+  정작 중요한 패턴을 설명할 수 없게 되는 현상을 말한다.
+  ```
+  추가 질문, Overfitting 을 해결하는 방법은?
+  ```
+  1. 데이터 그룹별 통계치 확인하고 시각화해서 데이터 패턴 확인하기
   ```
 - 🧐 Underfitting이란? [Answer Post]  
   ```
