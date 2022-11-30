@@ -214,8 +214,21 @@
   - Folding activation Function  
     ```
     ```
-- 🧐 CNN에 대해서 설명해보라  
+- 🧐 [CNN에 대해서 설명해보라](https://youngq.tistory.com/40)
+  추가 참고 : https://velog.io/@kim_haesol/CNN-%EA%B8%B0%EC%B4%88%EC%84%A4%EB%AA%85
   ```
+  Convolution Neural Network 의 약자인데,
+  이미지를 분석하기 위한 패턴을 찾는데 유용한 알고리즘이고,
+  말 그대로 Convolution 연산을 수행하는 Neural Network이다.
+  
+  기존에는 DNN을 사용해서 문제를 해결했는데 DNN은 기본적으로 1차원 데이터를 다룬다.
+  때문에 이미지가 입력값이 되는 경우 이것을 flatten 시켜서 1차원 데이터로 만드는데 이 과정에서
+  지역적/공간적 정보가 손실되게 된다. 또한 추상화 과정 없이 바로 연산과정으로 넘어가 버리기 때문에
+  학습시간과 능률의 효율성이 저하되는 문제가 발생했다.
+  
+  이러한 문제들을 해결한것이 바로 CNN이다.
+  이미지를 날 것 그대로 받음으로써 지역적/공간적 정보를 유지한 채 feature들의 layer를 빌드업 할 수 있게되었다.
+  CNN의 중요 포인트는 이미지 전체보다는 부분을 보는 것, 그리고 이미지의 한 픽셀과 주변 픽셀들의 연관성을 살리는 것이다.
   ```
 - 🧐 RNN에 대해서 설명해보라  
   ```
@@ -226,16 +239,30 @@
 - 🧐 Local optimum으로 빠지는데 성능이 좋은 이유는 무엇인가?  
   ```
   ```
-- 🧐 Internal Covariance Shift 란 무엇인가?  
+- 🧐 [Internal Covariance Shift 란 무엇인가?](https://data-newbie.tistory.com/356)
   ```
   ```
-- 🧐 Batch Normalization은 무엇이고 왜 하는가?  
+- 🧐 [Batch Normalization은 무엇이고 왜 하는가?](https://eehoeskrap.tistory.com/430)
   ```
+  Batch Normalization이란, 신경망 내부에서 학습 시 평균과 분산을 조정하여 변형된 분포가 나오지 않도록 하는것이다.
+  https://wooono.tistory.com/227
+  
+  [하는 이유]
+  - 기울기 폭발, 소실을 예방할 수 있고 학습속도를 향상시킬 수 있다.
+  - 배치 정규화를 사용하면 시그모이드 함수나 하이퍼볼릭탄젠트 함수를 사용하더라도 기울기 소실 문제를 크게 개선할 수 있다.
+  - 가중치 초기화에 훨씬 덜 민감해진다.
+  - 훨씬 큰 learning rate를 사용할 수 있어 학습 속도를 개선할 수 있다.
+  - 미니 배치 마다 평균과 표준편차를 계산하여 사용하므로 훈련 데이터에 일종의 잡음 주입의 부수효과로 과적합을 방지하는 효과가 있다.
+  - 드롭아웃과 비슷한 효과를 내며, 드롭아웃과 함께 사용하면 좋다.
+  - 배치정규화를 하면 모델을 복잡하게하고 추가 계산을 하는 하는 것이므로 test data에 대한 예측 시에 실행시간이 느려진다.
+    - 서비스 속도를 고려하는 관점에서는 배치 정규화가 꼭 필요한지 고민이 필요하다.
   ```
-- 🧐 Backpropagation이란 무엇인가?  
+- 🧐 [Backpropagation이란 무엇인가?](https://box-world.tistory.com/19)
   ```
+  내가 뽑고자 하는 target 값과 실제 모델이 계산한 output 이 얼마나 차이가 나는지 구한 후
+  그 오차값을 다시 뒤로 전파해가면서 각 노드가 가지고 있는 변수들을 갱신하는 알고리즘이다.
   ```
-- 🧐 Optimizer의 종류와 차이에 대해서 아는가?  
+- 🧐 [Optimizer의 종류와 차이에 대해서 아는가?](https://yeomko.tistory.com/39)
   ```
   - Gradient Descent : 
   - Stochastic Gradient Descent : 
