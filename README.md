@@ -343,6 +343,7 @@
   <p align="left">
     <img src="https://i.ibb.co/tYFd14p/svm04.webp", height="300x">
   </p> 
+    
   ```
   SVM은 분류를 위한 기준선(결정 경계, Decision Boundary)을 정의하는 모델이다.
   결정 경계(Decision Boundary)를 통해 어느쪽에 속하는지 판단하는 모델로 선형이나 비선형 분류, 회귀, 이상치 탐색에 사용할 수 있다.
