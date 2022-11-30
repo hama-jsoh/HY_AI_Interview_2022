@@ -214,7 +214,7 @@
   - Folding activation Function  
     ```
     ```
-- 🧐 [CNN에 대해서 설명해보라](https://youngq.tistory.com/40)
+- 🧐 [CNN에 대해서 설명해보라](https://youngq.tistory.com/40)  
   추가 참고 : https://velog.io/@kim_haesol/CNN-%EA%B8%B0%EC%B4%88%EC%84%A4%EB%AA%85
   ```
   Convolution Neural Network 의 약자인데,
