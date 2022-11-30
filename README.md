@@ -304,11 +304,23 @@
   - [Gradient Boost](https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-15-Gradient-Boost)
     ```
     ```
-- 🧐 Support Vector Machine이란 무엇인가?  
+- 🧐 [Support Vector Machine이란 무엇인가?](https://velog.io/@shlee0125/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%A0%95%EB%A6%AC-Support-Vector-Machine-05.-Why-does-SVM-maximize-margin)
+  <p align="left">
+    <img src="https://i.ibb.co/tYFd14p/svm04.webp", height="300x">
+  </p> 
   ```
+  SVM은 분류를 위한 기준선(결정 경계, Decision Boundary)을 정의하는 모델이다.
+  결정 경계(Decision Boundary)를 통해 어느쪽에 속하는지 판단하는 모델로 선형이나 비선형 분류, 회귀, 이상치 탐색에 사용할 수 있다.
+  최적의 결정 경계는 마진을 최대화한다. 점선으로부터 결정 경계(기준선)까지의 거리가 바로 `마진(margin)`이다.
+  
+  서포트 벡터는 Margin을 결정하는 각 클래스의 샘플을 말하기도 하고,
+  새로운 데이터가 들어왔을 때 클래스를 구분하는 기준이 되는 샘플을 말하기도 한다.
+  
+  SVM은 데이터셋이 작을 때 효과적이다.
   ```
-- 🧐 Margin을 최대화하면 어떤 장점이 있는가?  
+- 🧐 [Margin을 최대화하면 어떤 장점이 있는가?](https://velog.io/@shlee0125/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%A0%95%EB%A6%AC-Support-Vector-Machine-05.-Why-does-SVM-maximize-margin)
   ```
+  Margin을 최대화하는 것으로 현재 데이터로부터 Decision Boundary를 가능한한 멀리 떨어트려놓음으로써 Overfitting으 위험을 최소화 할 수 있다.
   ```
   
 ----
