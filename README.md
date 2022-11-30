@@ -5,7 +5,8 @@
   
 [현지]  
 
-[Statistic / Probability]  
+### Statistic / Probability
+
 - 🧐 Central Limit Theorem 이란 무엇인가?  
 - 🧐 Central Limit Theorem은 어디에 쓸 수 있는가?
 - 🧐 큰수의 법칙이란?
@@ -38,7 +39,8 @@
   
 ----
   
-[Machine Learning]  
+### Machine Learning
+
 - 🧐 Frequentist 와 Bayesian의 차이는 무엇인가?
 - 🧐 Frequentist 와 Bayesian의 장점은 무엇인가?
 - 🧐 차원의 저주란?
@@ -100,7 +102,8 @@
   
 ----
   
-[Linear Algebra]  
+### Linear Algebra
+
 - 🧐 Linearly Independent란?  
 - 🧐 Basis와 Dimension이란 무엇인가?  
 - 🧐 Null space란 무엇인가?  
