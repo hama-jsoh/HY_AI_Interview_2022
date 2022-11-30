@@ -198,6 +198,12 @@
     ```
 - 🧐 Activation function이란 무엇인가?3가지 Activation function type이 있다.  
   ```
+  각 노드에서 가중치-편향 연산을 거친 입력값을 다음 단계로 줄지 말지, 주면 어떻게 줄지 결정하는 일종의 문지기 역할을 하는 함수이다.
+  
+  1. 가중치-편향 연산의 결과값(가중합)을 그대로 내보내면 너무 크거나 작을 수 있다.
+     활성화 함수는 이를 0에서 1 또는 -1에서 1 사이의 값 등으로 바꿔준다(활성화 함수 유형에 따라 다름. 전부 다 상하한의 제한이 있는 것은 아니다)
+
+  2. 가중치-편향 연산 결과에 비선형성을 부여한다(비선형적인 활성화 함수인 경우. 특별한 경우가 아니라면 비선형성을 가진 활성화 함수만 사용한다.
   ```
   - Ridge activation Function
     ```
@@ -217,12 +223,6 @@
 - 🧐 Netwon's method란 무엇인가?  
   ```
   ```
-- 🧐 Gradient Descent란 무엇인가?  
-  ```
-  ```
-- 🧐 Stochastic Gradient Descent란 무엇인가?  
-  ```
-  ```
 - 🧐 Local optimum으로 빠지는데 성능이 좋은 이유는 무엇인가?  
   ```
   ```
@@ -237,6 +237,14 @@
   ```
 - 🧐 Optimizer의 종류와 차이에 대해서 아는가?  
   ```
+  - Gradient Descent : 
+  - Stochastic Gradient Descent : 
+  - Momentum : 
+  - Adam : 
+  - AdaGrad : 
+  - RMSProp : 
+  - AdaMax : 
+  - Nadam : 
   ```
 - 🧐 Ensemble이란?  
   ```
