@@ -151,25 +151,43 @@
   Overfitting은 너무 세밀하게 학습 데이터 하나하나를 다 설명하려고 하다보니 
   정작 중요한 패턴을 설명할 수 없게 되는 현상을 말한다.
   ```
-  추가 질문, Overfitting 을 해결하는 방법은?
+- 🧐 Underfitting이란? [Answer Post]  
   ```
+  ```
+- 🧐 Overfitting과 Underfitting은 어떤 문제가 있는가?  
+  ```
+  Overfitting은 모델 학습 오류가 테스트 데이터의 오류보다 훨씬 작은 경우를 의미하고,
+  Underfitting은 모델이 학습 오류를 줄이지 못하는 상황을 의미한다.
+  
+  즉, Overfitting이 되면 training data에 대한 정확도는 좋지만 실제 test data에 대해서는 에러가 많이 생길 수 있다.
+  반면에 Underfitting은 모델이 지나치게 일반화해서 training data에 대해서 학습이 제대로 되지 않는 상태를 말한다.
+  ```
+- 🧐 Overfitting과 Underfitting을 해결하는 방법은? [Answer Post]  
+  ```
+  [Overfitting]
   1. 데이터 그룹별 통계치 확인하고 시각화해서 데이터 패턴 확인하기
   2. 애초에 적절하게 수집된 데이터인지 확인하기
   3. Data Augmentation 하기, 다양한 상황의 데이터 만들기
   4. 학습 데이터에 포함될 특성(featureset) 제한하기
   5. 모델의 복잡도 줄이기, 모델이 복잡하면 데이터에 fitting 하기위해서 모델의 계수가 증가하는데
     이렇게되면 값에 민감하게 반응하게되고, 테스트데이터에 대해서 모델이 높은에러를 갖게된다.
-  ```
-- 🧐 Underfitting이란? [Answer Post]  
-  ```
-  ```
-- 🧐 Overfitting과 Underfitting은 어떤 문제가 있는가?  
-  ```
-  ```
-- 🧐 Overfitting과 Underfitting을 해결하는 방법은? [Answer Post]  
-  ```
+    
+  [Underfitting]
+  1. 학습 횟수 늘리기
+  2. 데이터의 특성에 비해 모델이 너무 간단할 때 발생하므로 알맞는 모델 선택
+  3. 데이터의 양이 너무 적을때 발생할 수 있는 문제이므로 추가 데이터 수집
   ```
 - 🧐 Regularization이란?  
+  ```
+  모델이 복잡할수록 모델의 계수가 증가하여 입력값에 대해 민감하게 반응하는 경향이 있는데,
+  Regularization은 모델의 계수를 0에 가깝게 줄여서
+  모델이 data에 대해서 너무 민감하게 반응하지 않게 모델의 복잡도를 줄이는것을 말한다.
+  이렇게 되면 모든 데이터에 대해 fitting 되지 않을것이고 그럼 Overfitting 문제를 해결하는데 기여하는 방법이 될 수 있다.
+  ```
+  추가 질문, Normalization이란?
+  ```
+  ```
+  추가 질문, Standardization이란?
   ```
   ```
   - Ridge
