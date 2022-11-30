@@ -356,7 +356,7 @@
   ```
 - 🧐 [Margin을 최대화하면 어떤 장점이 있는가?](https://velog.io/@shlee0125/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%A0%95%EB%A6%AC-Support-Vector-Machine-05.-Why-does-SVM-maximize-margin)
   ```
-  Margin을 최대화하는 것으로 현재 데이터로부터 Decision Boundary를 가능한한 멀리 떨어트려놓음으로써 Overfitting으 위험을 최소화 할 수 있다.
+  Margin을 최대화하는 것으로 현재 데이터로부터 Decision Boundary를 가능한한 멀리 떨어트려놓음으로써 Overfitting의 위험을 최소화 할 수 있다.
   ```
   
 ----
