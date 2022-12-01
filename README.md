@@ -7,26 +7,22 @@
 
 ### Statistic / Probability
 
-🧐 Central Limit Theorem 이란 무엇인가?
+🧐 [Central Limit Theorem 이란 무엇인가?](https://blog.naver.com/PostView.naver?blogId=angryking&logNo=222414551159&parentCategoryNo=&categoryNo=22&viewDate=&isShowPopularPosts=true&from=search)
 ```
 데이터의 크기(n)가 일정한 양을 넘으면, 평균의 분포는 정규분포에 근사하게 되며, 표준편차는 모집단의 표준편차를 표본수의 제곱근으로 나눈 값과 근사.
 즉 모집단으로부터 무작위로 표본을 여러 번 추출한 다음, 추출된 각각의 표본들의 평균을 분포로 그려보면 정규분포의 형태를 가짐.
 주의해야할 점은 표본의 양이 충분하면 표본의 평균이 모집단의 평균과 유사해진다는 뜻이 아니라 표본을 여러 번 추출 했을 때 각각의 표본 평균들의 분포가 정규분포를 이룸.
 ```
-[링크] : https://blog.naver.com/PostView.naver?blogId=angryking&logNo=222414551159&parentCategoryNo=&categoryNo=22&viewDate=&isShowPopularPosts=true&from=search
-
 🧐 Central Limit Theorem은 어디에 쓸 수 있는가?
 ```
 중심극한정리는 통계학에 있어 추정과 가설검정을 위한 핵심적인 이론으로 가설검정에 사용됨.
 더 나아가 데이터 과학을 위한 예측 모델링 가능
 ```
-🧐 큰수의 법칙이란?
+🧐 [큰수의 법칙이란?](https://namu.wiki/w/%ED%81%B0%20%EC%88%98%EC%9D%98%20%EB%B2%95%EC%B9%99?__cf_chl_tk=QK.VtsHZHCpJfNb.mzrLeeskXzahWBKOp5M9paBlyAg-1669796077-0-gaNycGzNCdE)
 ```
 경험적 확률과 수학적 확률 사이의 관계를 나타내는 법칙으로 표본집단의 크기가 커지면 그 표본평균이 모평균에 가까워짐을 의미. 
 따라서 취합하는 표본의 수가 많을수록 통계적 정확도가 올라감
 ```
-[링크] : https://namu.wiki/w/%ED%81%B0%20%EC%88%98%EC%9D%98%20%EB%B2%95%EC%B9%99?__cf_chl_tk=QK.VtsHZHCpJfNb.mzrLeeskXzahWBKOp5M9paBlyAg-1669796077-0-gaNycGzNCdE
-
 🧐 확률이랑 통계랑 다른 점은?
 ```
 확률은 어떤 사건이 일어날 수 있는 수학적기대치
@@ -41,7 +37,7 @@ X=0으로 고정할 때 P(X=0,Y=0)+P(X=0,Y=1)=P(X=0) 도출될때 X는 고정되
 ```
 <img src='https://user-images.githubusercontent.com/79496166/204947444-1d465c80-a2e6-4c28-a826-1eaa4c6ce689.png'/>
 
-🧐 Conditional Distribution이란 무엇인가?
+🧐 [Conditional Distribution이란 무엇인가?](https://datalabbit.tistory.com/17#recentComments)
 ```
 조건부확률은 특정한 주어진 조건 하에서 어떤 사건이 발생할 확률을 의미.
 즉 어떤사건 A가 일어났다는 전제 하에서 사건 B가 발생할 확률.
@@ -49,7 +45,6 @@ X=0으로 고정할 때 P(X=0,Y=0)+P(X=0,Y=1)=P(X=0) 도출될때 X는 고정되
 공식 : P(B|A) = P(A∩B)/P(A)
 ```
 <img src='https://user-images.githubusercontent.com/79496166/204947774-f9d4fef8-57c8-4832-9c66-a83b1af457a3.png'/>
-[링크] : https://datalabbit.tistory.com/17#recentComments
 
 🧐 Bias란 무엇인가?
 ```
