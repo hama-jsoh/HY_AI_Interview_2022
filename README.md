@@ -129,7 +129,7 @@ R의 값은 +가 될 수 도있고 -가 될 수도 있지만 r을 제곱하면 �
 ```
 [링크] : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=xodh16&logNo=220545881424
 
-🧐 P-value란 무엇인가?
+🧐 [P-value란 무엇인가?](https://bodi.tistory.com/entry/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95-P-value%EB%9E%80%EC%96%B4%EB%96%A4-%EC%82%AC%EA%B1%B4%EC%9D%B4-%EC%9A%B0%EC%97%B0%ED%9E%88-%EB%B0%9C%EC%83%9D%ED%95%A0-%ED%99%95%EB%A5%A0)
 ```
 Probability-value의 줄임말로 확률 값을 뜻하며 어떤 사건이 우연히 발생할 확률 
 P-value를 어느곳에 적용하는지 알기 위해서는 가설검정에 대한 이해가 선행되어야 함.
@@ -153,9 +153,7 @@ B회사 : 90점
 P-value의 값이 0.05보다 작다는 것은 어떤 사건이 우연히 일어날 확률이 0.05보다 작다라는 의미이며 우연히 발생할 확률이 5%보다 작다는 것은 이 사건이 우연히 일어났을 가능성이 거의 없다는 것으로 추정 가능.
 
 ```
-[링크] : https://bodi.tistory.com/entry/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95-P-value%EB%9E%80%EC%96%B4%EB%96%A4-%EC%82%AC%EA%B1%B4%EC%9D%B4-%EC%9A%B0%EC%97%B0%ED%9E%88-%EB%B0%9C%EC%83%9D%ED%95%A0-%ED%99%95%EB%A5%A0
-
-🧐 likelihood-ratio test 이란 무엇인가?
+🧐 [likelihood-ratio test 이란 무엇인가?](https://data-scientist-brian-kim.tistory.com/91)
 ```
 우도 비율 검정은 모형 두 개의 우도의 비를 계산해서 두 모형의 우도가 유의하게 차이나는지 비교하는 방법
 ```
@@ -167,7 +165,6 @@ P-value의 값이 0.05보다 작다는 것은 어떤 사건이 우연히 일어�
 
 ```
 <img src='https://user-images.githubusercontent.com/79496166/204951197-2ec69764-936e-411f-8c87-46e6afe734a1.png'/>
-[링크] : https://data-scientist-brian-kim.tistory.com/91
 
 ----
 
@@ -183,16 +180,14 @@ P-value의 값이 0.05보다 작다는 것은 어떤 사건이 우연히 일어�
 ```
 <img src='https://user-images.githubusercontent.com/79496166/204951354-d78d6816-8ed9-4db1-ab9b-6f98ade96406.png'/>
 
-🧐 Frequentist 와 Bayesian의 장점은 무엇인가?
+🧐 [Frequentist 와 Bayesian의 장점은 무엇인가?](https://bodi.tistory.com/entry/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95-P-value%EB%9E%80%EC%96%B4%EB%96%A4-%EC%82%AC%EA%B1%B4%EC%9D%B4-%EC%9A%B0%EC%97%B0%ED%9E%88-%EB%B0%9C%EC%83%9D%ED%95%A0-%ED%99%95%EB%A5%A0)
 ```
 빈도주의는 여러 번의 실험, 관찰을 통해 알게된 사건의 확률을 검정하므로 사건이 독립적이고 반복적이며 정규 분포형태일 때 사용하는 것이 좋다.
 또한 대용량 데이터를 처리 할 수 있다면 계산이 비교적 복잡하지 않기 때문에 쉽게 처리가 가능하다.
 베이지안은 확률 모델이 명확히 설정되어 있다면 조건부로 가설을 검증하기 때문에 가설의 타당성이 높아짐
 
 ```
-[링크] : https://bodi.tistory.com/entry/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95-P-value%EB%9E%80%EC%96%B4%EB%96%A4-%EC%82%AC%EA%B1%B4%EC%9D%B4-%EC%9A%B0%EC%97%B0%ED%9E%88-%EB%B0%9C%EC%83%9D%ED%95%A0-%ED%99%95%EB%A5%A0
-
-🧐 차원의 저주란?
+🧐 [차원의 저주란?](https://for-my-wealthy-life.tistory.com/40)
 ```
 차원의 저주란 차원이 증가하면서 학습데이터 수가 차원 수보다 적어져서 성능이 저하되는 현상을 일컫는다. 차원이 증가할수록 변수가 증가하고 개별 차원 내에서 학습할 데이터 수가 적어진다.
 이때 주의할 점은 변수가 증가한다고 반드시 차원의 저주가 발생하는 것은 아니다. 관측치보다 변수 수가 많아지는 경우에 차원의 저주문제가 발생함
@@ -207,9 +202,7 @@ P-value의 값이 0.05보다 작다는 것은 어떤 사건이 우연히 일어�
 즉 정보가 없는 공간이기 때문에 빈 공간이 많을수록 학습 시켰을 때 모델 성능이 저하될 수 밖에 없다.
 
 ```
-[링크] : https://for-my-wealthy-life.tistory.com/40
-
-🧐 Train, Valid, Test를 나누는 이유는 무엇인가?
+🧐 [Train, Valid, Test를 나누는 이유는 무엇인가?](https://velog.io/@hya0906/2022.03.03-ML-Testvalidtest%EB%82%98%EB%88%84%EB%8A%94-%EC%9D%B4%EC%9C%A0)
 ```
 Train data는 training과정에서 학습을 하기 위한 용도로 사용된다.
 validation data는 training과정에서 사용되며 학습을 하는 과정에서 중간평가를 하기 위한 용도이며 train data에서 일부를 떼내서 가져옴
@@ -217,9 +210,7 @@ test data는 training 과정이 끝난 후 성능평가를 하기 위해 사용�
 보통 일반적으로 train:validation:test는 6:2:2로 하며 train loss는 낮은데 test loss가 높으면 훈련 데이터에 과대적합(overfitting)이 되었다는 의미이다
 
 ```
-[링크] : https://velog.io/@hya0906/2022.03.03-ML-Testvalidtest%EB%82%98%EB%88%84%EB%8A%94-%EC%9D%B4%EC%9C%A0
-
-🧐 Cross Validation이란?
+🧐 [Cross Validation이란?](https://wooono.tistory.com/105)
 ```
 교차검증은 보통 train set으로 모델을 훈련하고 test set으로 모델을 검증함.
 그러나 고정된 test set을 통해 모델의 성능을 검증하고 수정하는 과정을 반복하면 결국 내가 만든 모델은 test set에만 잘 동작하는 모델이 된다.
@@ -238,7 +229,6 @@ K-Fold는 가장 일반적으로 사용되는 교차 검증 방법이다.
 5. 차례대로 다음 폴드를 Validation Set으로 사용하며 3번을 반복한다.
 6. 총 k 개의 성능 결과가 나오며, 이 k개의 평균을 해당 학습 모델의 성능이라고 한다.
 <img src='https://user-images.githubusercontent.com/79496166/204952025-3650e0bd-d8ac-4a8b-ae8f-fd848318fb19.png'/>
-[링크] : https://wooono.tistory.com/105
 
 🧐 (Super-, Unsuper-, Semi-Super) vised learning이란 무엇인가?
 
@@ -265,15 +255,13 @@ K-Fold는 가장 일반적으로 사용되는 교차 검증 방법이다.
 ```
 ㄴㅇㄹ
 ```
-##### 강화학습
+[강화학습](https://bangu4.tistory.com/96)
 ```
 강화학습은 분류할 수 있는 데이터가 존재하지 않고 데이터가 있어도 정답이 따로 정해져 있지 않으며 자신이 한 행동에 대해 보상을 받으며 학습하는 것을 말함.
 게임을 예로들면 게임의 규칙을 따로 입력하지 않고 자신이 게임 환경에서 현재 상태에서 높은 점수를 얻는 방법을 찾아가며 행동하는 학습 방법으로 특정 학습 횟수를 초과하면 높은 점수를 획득할 수 있는 전략이 형성되게 됨.
 
 ```
-[링크] : https://bangu4.tistory.com/96
-
-🧐 Receiver Operating Characteristic Curve란 무엇인가?
+🧐 [Receiver Operating Characteristic Curve란 무엇인가?](https://bioinfoblog.tistory.com/221)
 ```
 ROC는 FPR(False positive rate)과 TPR(True Positive Rate)을 각각 x, y축으로 놓은 그래프이다.
 TPR(True Positive Rate)는 1인 케이스에 대해 1로 바르게 예측하는 비율(Sensitivity)로 암 환자에 대해 암이라고 진단하는 경우를 뜻함.
@@ -283,7 +271,6 @@ ROC curve는 어떤 모델이 좋은 성능을 보이는 지 판단할 때 사�
 즉 높은 sensitivitiy와 높은 specifity를 보이는 모델을 고르기 위해 다양한 모델에 대해 ROC curve를 그릴 때 좌상단으로 가장 많이 치우친 그래프를 갖는 모델이 가장 높은 성능을 보인다고 말할 수 있다.
 ```
 <img src='https://user-images.githubusercontent.com/79496166/204953013-9b6f4216-b6e0-4c67-a25c-8206e8c50106.png'/>
-[링크] : https://bioinfoblog.tistory.com/221
 
 🧐 Accuracy,  Recall, Precision, f1-score에 대해서 설명해보라
 ##### Accuracy
@@ -323,7 +310,7 @@ Precision은 모델이 True로 예측한 데이터 중 실제로 True인 데이�
 <Precision 수식>
 **Note: Precision과 recall은 서로 trade-off되는 관계가 있음.**
 
-##### F1 score 
+[F1 score](https://eunsukimme.github.io/ml/2019/10/21/Accuracy-Recall-Precision-F1-score/)
 ```
 모델의 성능이 얼마나 효과적인지 설명할 수 있는 지표.
 F1score는 Precision과 recall의 조화평균이다.
@@ -343,19 +330,14 @@ F1score는 Precision과 recall을 조합하여 하나의 통계치를 반환한�
 ```
 F1score가 매우 낮게 계산된 것이 확인됨.
 ```
-[링크] : https://eunsukimme.github.io/ml/2019/10/21/Accuracy-Recall-Precision-F1-score/
-
-🧐 Precision Recall Curve란 무엇인가?
+🧐 [Precision Recall Curve란 무엇인가?](https://ardentdays.tistory.com/20)
 ```
 Precision-Recall Curves는 Parameter인 Threshold를 변화시키면서 Precision과 Recall을 Plot 한 Curve. Precision-Recall Curves는 X축으로는 Recall을, Y축으로는 Precision을 가짐. 
 Precision-Recall Curve는 단조함수가 아니기 때문에 이러한 이유로 ROC Curve보다 직관적이지 못하다는 단점을 가짐.
 
 단조함수 ? 주어진 순서를 보존하는 함수
 ```
-[링크] : https://ardentdays.tistory.com/20
-
-🧐 Type 1 Error 와 Type 2 Error는?
-
+🧐 [Type 1 Error 와 Type 2 Error는?](https://angeloyeo.github.io/2021/01/26/types_of_errors.html)
 ```
 가설검정 이론에서 1종 오류와 2종오류는 각각 귀무가설을 잘못 기각하는 오류와 귀무가설을 잘못 채택하는 오류이다.
 
@@ -375,7 +357,6 @@ Precision-Recall Curve는 단조함수가 아니기 때문에 이러한 이유�
 
 예를들면 아파트에 불이 났음에도 화재경보 알람이 울리지 않고 그대로 지나간 경우를 말하게 된다.
 ```
-[링크] : https://angeloyeo.github.io/2021/01/26/types_of_errors.html
 
 ----
 ----
