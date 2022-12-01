@@ -249,12 +249,16 @@
   ```
   - Ridge activation Function
     ```
+    차원의 저주에 영향을 받지 않는 함수이다.
+    일반적인 선형 모델 및 Neural Network의 활성화 함수로 활용된다.
     ```
   - Radial activation Function
     ```
+    I have no idea.
     ```
   - Folding activation Function  
     ```
+    I have no idea.
     ```
 - 🧐 [CNN에 대해서 설명해보라](https://youngq.tistory.com/40)  
   추가 참고 : https://velog.io/@kim_haesol/CNN-%EA%B8%B0%EC%B4%88%EC%84%A4%EB%AA%85
@@ -272,14 +276,40 @@
   이미지를 날 것 그대로 받음으로써 지역적/공간적 정보를 유지한 채 feature들의 layer를 빌드업 할 수 있게되었다.
   CNN의 중요 포인트는 이미지 전체보다는 부분을 보는 것, 그리고 이미지의 한 픽셀과 주변 픽셀들의 연관성을 살리는 것이다.
   ```
-- 🧐 RNN에 대해서 설명해보라  
+- 🧐 [RNN에 대해서 설명해보라](https://byumm315.tistory.com/entry/RNN%EC%9D%84-%EC%95%8C%EC%95%84%EB%B4%85%EC%8B%9C%EB%8B%A4)
+  추가 참고1 : https://hwi-doc.tistory.com/entry/cs231n-Recurrent-Neural-Network-RNN
+  추가 참고2 : https://techblog-history-younghunjo1.tistory.com/481
   ```
+  RNN은 주로 시계열 데이터, 텍스트 데이터를 다룰때 사용하는데,
+  이름 그대로 Recurrent Neural Network, 순환하는 신경망이다.
+  hidden layer에서 나온 결과값이 다시 hidden layer로 돌아가 새로운 입력값과 연산을 수행하는 순환 알고리즘이다.
+  
+  요약하면, FC layer나 CNN은 hidden layer에서 나온 결과값이 output layer 방향으로 흐르는데,
+  RNN은 hidden layer로 되돌아가 순환한다는 점에서 큰 차이가 있다.
+  
+  RNN은 역전파(back-propagation)과정에서 기울기가 폭발(끝없이 발산)하거나 소실(0으로 수렴)되는 문제가 발생한다.
+  layer가 많을수록(깊어질수록), 오차 역전파가 진행될수록 기울기가 소실되는 고질적인 문제를 안고 있다.
+  
+  이 기울기 소실문제를 개선한 RNN모델, LSTM이 있다.
+  LSTM은 정보를 기억(보존)하는 셀(또는 게이트)를 두어 기울기 소실 문제를 `개선`했다. (완전히 없애지는 못했다, 예방의 느낌?)
   ```
-- 🧐 Netwon's method란 무엇인가?  
+- 🧐 [Netwon's method란 무엇인가?](https://darkpgmr.tistory.com/58)
   ```
+  방정식 f(x)=0 의 해를 근사적으로 찾을 때 사용하는 방법이다.
+  인수분해도 안되고 달리 정상적인 방법으로는 해를 구하기 힘들 때 사용할 수 있는 방법이 바로 Netwon's method 이다.
+  
+  기본적으로 f(a) 가 x=a 에서의 접선의 기울기라는 미분의 기하학적 해석을 이용한다.
+  현재 x값에서 접선을 그린다음 접선이 x축과 만나는 지점으로 x를 이동시켜 가면서 점진적으로 해를 찾는 방법이다.
   ```
 - 🧐 Local optimum으로 빠지는데 성능이 좋은 이유는 무엇인가?  
   ```
+  어떤 파라미터가 모든 경우를 통틀어 최적인 경우를 global optimum이라 하고, 주변의 다른 파라미터들보다 더 나은 경우를 local optimum이라고 부른다.
+  global optimum이든 local optimum이든 최적점에서는 항상 기울기가 0이 된다.
+  따라서 local optimum에 빠지면 더이상 파라미터를 개선할 수 없고, 학습이 거기서 종료된다.
+  
+  선형회귀에서의 local optimum은 곧 global optimum이기 때문에 항상 오차가 적은 파라미터를 찾을 수 있다.
+  
+  (딥러닝에서의 local optimum은 global optimum이라는 보장이 없기 때문에 오히려 local optimum에 빠지지 않기 위한 여러가지 방법을 동원한다.)
   ```
 - 🧐 [Internal Covariance Shift 란 무엇인가?](https://data-newbie.tistory.com/356)
   ```
