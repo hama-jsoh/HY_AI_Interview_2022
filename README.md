@@ -337,12 +337,29 @@
   ```
 - 🧐 [Optimizer의 종류와 차이에 대해서 아는가?](https://yeomko.tistory.com/39)
   ```
-  - Gradient Descent : 
-  - Stochastic Gradient Descent : 
+  - Gradient Descent
+    기울기의 반대 방향으로 일정 크기만큼 이동하는 것을 반복하며 Loss function의 값을 최소화 하는 특정 파라미터값을 찾는 방법이다.
+      > 추가 참고 : https://mangkyu.tistory.com/62
+    Neural Network의 Weight를 조정하는 과정에서 보통 이 방법을 사용한다.
+    네트워크에서 내놓는 결과값과 실제값 사이의 차이를 정의하는 Loss function의 값을 최소화하기 위해 기울기를 이용하는 방법이다.
+    
+    이 방법은 함수의 최소값을 찾는 문제에서 활용된다.
+    가령, 미분계수가 0인 지점을 찾으면 되지 않느냐? 라고 반문할수도 있는데, 그렇지 않고 굳이 이 방법을 사용하는 이유는
+    실무에서 맞닥뜨리는 문제(함수)의 형태가 복잡해(비선형) 미분계수와 그 근을 계산하기 어려운 경우가 많고,
+    실제로 미분계수를 구하는것보다 gradient descent가 computational cost(연산량)이 더 적고 효율적이기 때문이다.
+    
+  - Stochastic Gradient Descent
+    Gradient Descent 는 Loss function을 계산할때 전체 데이터에 대해 연산하기 때문에 상대적으로 많은 연산량을 필요로 한다.
+    이를 방지하고자 Loss function을 계산할 때, 전체 데이터가(배치) 아닌 일부 데이터(미니배치)를 사용해 Loss를 계산한다.
+    계산속도가 훨씬 빠르기 때문에 같은 시간에 더 많은 step을 갈 수 있고, 여러번 반복할 경우 Batch 처리한 결과로 수렴한다.
+    또한, Local minima에 빠지지 않고 더 좋은 방향으로 수렴할 가능성이 높다는 장점도 갖고 있다.
+    
+    이를 변형한 알고리즘으로 Momentum, Adagrad, RMSProp 등이 있다.
+    
   - Momentum : 
-  - Adam : 
   - AdaGrad : 
   - RMSProp : 
+  - Adam : 
   - AdaMax : 
   - Nadam : 
   ```
