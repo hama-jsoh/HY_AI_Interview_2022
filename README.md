@@ -187,9 +187,16 @@
   ```
   추가 질문, Normalization이란?
   ```
+  값의 범위(scale)을 0~1 사이의 값으로 바꾸는것을 말한다.
+  주로 학습 전에 scaling 하는 것이고
+  - 머신러닝에서는 scale이 큰 feature의 영향이 비대해지는 것을 방지할때 사용하고,
+  - 딥러닝에서는 Local minimum(minima)에 빠질 위험을 감소시킬때 사용한다. 이로 인해 학습속도 향상을 기대할 수 있다.
+
+  예를 들면, scikit-learn에서 MinMaxScaler 가 있다.
   ```
   추가 질문, Standardization이란?
   ```
+  값의 범위(scale)을 평균 0, 분산 1이 되도록 변환하는것을 말한다.
   ```
   - Ridge
     ```
