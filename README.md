@@ -184,6 +184,12 @@
   Regularization은 모델의 계수를 0에 가깝게 줄여서
   모델이 data에 대해서 너무 민감하게 반응하지 않게 모델의 복잡도를 줄이는것을 말한다.
   이렇게 되면 모든 데이터에 대해 fitting 되지 않을것이고 그럼 Overfitting 문제를 해결하는데 기여하는 방법이 될 수 있다.
+  
+  weight를 조정할 때 규제(제약)을 거는 기법이다.
+  위에서 설명한것과 같이 Overfitting을 막기 위해 사용한다.
+  L1 regularization, L2 regularization 등의 종류가 있다.
+  - L1 : Lasso, 마름모
+  - L2 : Ridge, 원
   ```
   추가 질문, Normalization이란?
   ```
@@ -197,12 +203,40 @@
   추가 질문, Standardization이란?
   ```
   값의 범위(scale)을 평균 0, 분산 1이 되도록 변환하는것을 말한다.
+  주로 학습 전에 scaling 하는 것이고 (Normalization 과 동일)
+  - 머신러닝에서는 scale이 큰 feature의 영향이 비대해지는 것을 방지할때 사용하고,
+  - 딥러닝에서는 Local minimum(minima)에 빠질 위험을 감소시킬때 사용한다. 이로 인해 학습속도 향상을 기대할 수 있다.
+
+  정규분포를 표준정규분포로 변환하는 것과 같다.
+  표준화로 번역하기도 한다.
+  
+  예를 들면, scikit-learn에서 StandardScaler 가 있다.
   ```
+  ![lp-norm](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrZ5Ys%2FbtqWsHx2sRa%2FK9NVok5LaMRDmk6YSi2jy1%2Fimg.png)
+  
+  추가 참고 : https://sooho-kim.tistory.com/85
+  
+  l1-norm, l2-norm 의 컨셉을 가져와 cost-function에 추가하여 weight를 조절하는 기법이다.
+  일반적으로 lp-norm이라 하고 p값에 따라 위 그래프처럼 그래프가 변화한다.
+  p가 1인 norm이 l1-norm, p가 2인 norm이 l2-norm이다.
+  
+  l1-norm : 두 벡터간의 거리를 절대 값으로 구하는 것
+  l2-norm : 유클리디안 거리. 즉, 최단거리.. 피타고라스정리를 생각하면 쉽다.
+  
+  따라서, `l1-loss`는 타겟값과 예측값의 차를 절대값으로 구한것이고,
+  `l2-loss`는 타겟값과 예측값의 차를 제곱한 값으로 구한것이다.
+  
   - Ridge
     ```
+    L1 regularization 이며 cost function에 L1-norm 을 추가한 형태이다.
+    변수간 상관관계가 높아도 좋은 성능을 낸다.
+    크기가 큰 변수를 우선적으로 줄일때 사용한다.
     ```
   - Lasso  
     ```
+    L2 regularization 이며 cost function에 L2-norm 을 추가한 형태이다.
+    변수간 상관관계가 높으면 오히려 성능이 떨어진다.
+    비중요 변수를 우선적으로 줄일때 사용한다.
     ```
 - 🧐 Activation function이란 무엇인가?3가지 Activation function type이 있다.  
   ```
