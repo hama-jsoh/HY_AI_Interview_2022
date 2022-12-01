@@ -254,11 +254,11 @@
     ```
   - Radial activation Function
     ```
-    I have no idea.
+    PASS
     ```
   - Folding activation Function  
     ```
-    I have no idea.
+    PASS
     ```
 - 🧐 [CNN에 대해서 설명해보라](https://youngq.tistory.com/40)  
   추가 참고 : https://velog.io/@kim_haesol/CNN-%EA%B8%B0%EC%B4%88%EC%84%A4%EB%AA%85
@@ -408,6 +408,7 @@
     ```
   - Logit Boost
     ```
+    PASS
     ```
   - [Gradient Boost](https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-15-Gradient-Boost)
     ```
