@@ -153,6 +153,7 @@
   ```
 - 🧐 [Underfitting이란?](https://jrc-park.tistory.com/271)
   ```
+  링크 참조
   ```
 - 🧐 Overfitting과 Underfitting은 어떤 문제가 있는가?  
   ```
@@ -241,6 +242,7 @@
   ```
 - 🧐 [Internal Covariance Shift 란 무엇인가?](https://data-newbie.tistory.com/356)
   ```
+  링크 참조
   ```
 - 🧐 [Batch Normalization은 무엇이고 왜 하는가?](https://eehoeskrap.tistory.com/430)
   ```
@@ -331,13 +333,14 @@
   ```
   - [AdaBoost](https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-14-AdaBoost)
     ```
-    
+    링크 참조
     ```
   - Logit Boost
     ```
     ```
   - [Gradient Boost](https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-15-Gradient-Boost)
     ```
+    링크 참조
     ```
 - 🧐 [Support Vector Machine이란 무엇인가?](https://velog.io/@shlee0125/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%A0%95%EB%A6%AC-Support-Vector-Machine-05.-Why-does-SVM-maximize-margin)
   <p align="left">
