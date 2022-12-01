@@ -245,9 +245,9 @@
   링크 참조
   ```
 - 🧐 [Batch Normalization은 무엇이고 왜 하는가?](https://eehoeskrap.tistory.com/430)
+  추가 참고 : https://wooono.tistory.com/227
   ```
   Batch Normalization이란, 신경망 내부에서 학습 시 평균과 분산을 조정하여 변형된 분포가 나오지 않도록 하는것이다.
-  https://wooono.tistory.com/227
   
   [하는 이유]
   - 기울기 폭발, 소실을 예방할 수 있고 학습속도를 향상시킬 수 있다.
