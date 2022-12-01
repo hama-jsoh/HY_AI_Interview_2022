@@ -64,14 +64,13 @@ Biased Estimator는 파라미터 추정 평균의 bias 값이 0이 아닌 경우
 
 ```
 
-🧐 Variance, MSE란?
+🧐 [Variance, MSE란?](https://gaussian37.github.io/machine-learning-concept-bias_and_variance/)
 ##### variance 
 ```
 Variance는 다양한 데이터 셋에 대하여 예측값이 얼만큼 변화할 수 있는지에 대한 양의 개념. 
 이는 모델이 얼만큼 유동성을 가지는 지에 대한 의미로도 사용되며 분산의 본래 의미와 같이 얼만큼 예측값이 퍼져서 다양하게 출력될 수 있는 정도로 해석할 수있음.
 ```
 <img src='https://user-images.githubusercontent.com/79496166/204948284-82eb5026-3788-4776-8374-a089715ae674.png'/>
-[링크] : https://gaussian37.github.io/machine-learning-concept-bias_and_variance/
 
 ##### MSE
 ```
@@ -95,40 +94,30 @@ MSE가 작을수록 추정의 정확성이 높아짐.
 ```
 <img src='https://user-images.githubusercontent.com/79496166/204949883-d995dc66-efc4-41eb-9b02-cfc0ee3639ec.png'/>
 
-🧐 covariance/correlation 이란 무엇인가?
+🧐 [covariance이란 무엇인가?](https://blog.naver.com/sw4r/221025662499)
 ```
 Covariance 즉 공분산은 서로 다른 변수들 사이에 얼마나 의존하는지를 수치적으로 표현하며 그것의 직관적 의미는 어떤 변수(X)가 평균으로부터 증가 또는 감소라는 경향을 보일 때 이러한 경향을 다른 변수(Y 또는 Z 등등)가 따라하는 정도를 수치화 한 것
 공분산은 또한 두 변수의 선형관계의 관련성을 측정한다 라고도 할 수 있다.
-
 ```
-[링크] : https://blog.naver.com/sw4r/221025662499
-
+🧐 [correlation이란 무엇인가?](https://otexts.com/fppkr/causality.html)
 ```
 Correlation 즉 상관관계는 상관 분석과 연관됨. 즉 두 변수 간에 어떤 선형적 관계를 갖고 있는 지를 분석하는 방법이 상관 분석인데, 두 변수는 서로 독립적인 관계이거나 상관된 관계일 수 있으며 이 때 두 변수 간의 관계의 강도를 상관관계라고 한다
 ```
-[링크] : https://otexts.com/fppkr/causality.html
-
-🧐 Total variation 이란 무엇인가?
+🧐 [Total variation 이란 무엇인가?](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=lllmanilll&logNo=140184184273)
 ```
 전체분산은 각 표본의 측정치들이 전체 평균으로부터 얼마나 분산되어 있는지를 측정한 것
 ```
-[링크] : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=lllmanilll&logNo=140184184273
-
-🧐 Explained variation 이란 무엇인가?
+🧐 [Explained variation 이란 무엇인가?](https://dnai-deny.tistory.com/16)
 ```
 설명된 분산은 통계에서 주어진 데이터의 분산을 설명하는 비율을 측정함. 그중에서 설명된 분산의 비율은 전체 고윳값중에서 원하는 고윳값의 비율임.
 ```
-[링크] : https://dnai-deny.tistory.com/16
-
-🧐 Coefficient of determination 이란? (결정계수) r2
+🧐 [Coefficient of determination 이란? (결정계수) r2](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=xodh16&logNo=220545881424)
 ```
 결정계수란 y의 변화가 x에 의해 몇 % 설명되는지 보여주는 값임. 예를 들면 결정계수가 0.52이면 y의 변화는 x에 의해 52% 설명된다는 뜻이다.
 R의 값은 +가 될 수 도있고 -가 될 수도 있지만 r을 제곱하면 무조건 양수이므로 양의 상관관계든 음의 상관관계든 y의 변화가 x에 의해 몇 % 영향을 미친 것인지 설명이 가능함.
 결정계수의 범위는 0과 1이며 만약 모든 관찰점이 회귀선상에 위치한다면 결정계수의 값은 1이 됨. 반대로 회귀선에서의 변수들 간 회귀관계가 전혀 없어 추정된 회귀선의 기울기가 0이면 결정계수의 값은 0이 된다.
 
 ```
-[링크] : https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=xodh16&logNo=220545881424
-
 🧐 [P-value란 무엇인가?](https://bodi.tistory.com/entry/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A0%95-P-value%EB%9E%80%EC%96%B4%EB%96%A4-%EC%82%AC%EA%B1%B4%EC%9D%B4-%EC%9A%B0%EC%97%B0%ED%9E%88-%EB%B0%9C%EC%83%9D%ED%95%A0-%ED%99%95%EB%A5%A0)
 ```
 Probability-value의 줄임말로 확률 값을 뜻하며 어떤 사건이 우연히 발생할 확률 
